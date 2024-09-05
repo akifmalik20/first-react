@@ -86,7 +86,7 @@ const Sec5 = () => {
 
             {/* Footer */}
             <footer className="footerr center-headingg">
-                <p>Copyright © 2024 Ezitech Institute | Design & Develop by <a href="https://www.eziline.com" target="_blank" rel="noopener noreferrer">Eziline Software House</a></p>
+                <p>Copyright © 2024 Ezitech Institute | Design & Develop by <a href="https://www.eziline.com" target="_blank" rel="noopener noreferrer">Muhammd Akif Hussain</a></p>
             </footer>
 
         
