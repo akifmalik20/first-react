@@ -1,0 +1,259 @@
+/* General Container for all sections */
+.man-container {
+    background-color: #333333; /* Dark blue background */
+    color: #fff; /* White text color */
+    padding: 50px;
+    font-family: Poppins, sans-serif; /* Apply Poppins font */
+}
+
+/* Main heading styling */
+.center-heading {
+     /* Reduced font size */
+    font-weight: bolder; /* Bold font for heading */
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.center-headingg {
+    
+  margin-top: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.center-heading .aa {
+    color:#ec9238; /* Light blue for 'start' */
+}
+
+/* Image Styling */
+.ai {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Flex container for the content below */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px; /* Reduced gap between the divs */
+}
+
+/* ABOUT Section */
+.about-section {
+    flex: 1; /* Normal width */
+    padding: 10px;
+    margin: 0px ; /* Reduced margin */
+    max-width: 40%; /* Reduced width for About section */
+}
+
+/* Title in each section */
+.div-title {
+    font-size: 18px; /* Reduced font size */
+    font-weight: 600; /* Bold font weight */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#ec9238;
+}
+
+/* Paragraph content inside ABOUT section */
+.div-content {
+    font-size: 13px; /* Reduced font size */
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* POPULAR COURSES Section */
+.popular-courses {
+    flex: 2; /* Double space compared to other sections */
+    padding: 10px;
+    margin: 0px ; /* Reduced margin */
+    max-width: 30%; /* More width for the Popular Courses section */
+}
+
+/* Course Link Styling */
+.popular-courses .course-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff; /* Default color is white */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    background: none; /* Remove background color */
+}
+
+.popular-courses .course-link:hover {
+    background-color: #0056b3; /* Lighten on hover */
+}
+
+/* Course image */
+.popular-courses .course-link img {
+    width: 50px; /* Reduced width of image */
+    height: 50px; /* Reduced height of image */
+    border-radius: 5px; /* Optional rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Course Text */
+.course-text {
+    font-size: 14px;
+}
+
+.course-text p:first-child {
+    font-weight: 600; /* Bold for the course name */
+    margin-bottom: 5px;
+}
+
+.course-text p:last-child {
+    font-size: 12px; /* Smaller for author name */
+}
+
+/* PAGES Section */
+.list-links {
+    flex: 1; /* Normal width */
+    padding: 10px;
+    margin: 0px ; /* Reduced margin */
+    max-width: 20%; /* Reduced width for Pages section */
+}
+
+.list-links ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.list-links ul li {
+    margin-bottom: 10px;
+}
+
+.list-links ul li a {
+    color: #fff; /* Default color is white */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.list-links ul li a:hover {
+    color: #00a6ff; /* Blue color on hover */
+    text-decoration: none;
+}
+
+/* CONTACT Section */
+.contact-info {
+    flex: 1; /* Normal width */
+    padding: 10px;
+    margin: 0px ; /* Reduced margin */
+    max-width: 20%; /* Reduced width for Contact section */
+}
+
+.contact-info .contact-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 13px; /* Reduced font size */
+    margin: 0;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .center-heading {
+        font-size: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content-container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px; /* Increase gap between stacked sections */
+    }
+
+    .responsive-div {
+        max-width: 50%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .man-container {
+        padding: 30px;
+    }
+
+    .center-heading {
+        font-size: 35px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .ai {
+        margin-bottom: 20px;
+    }
+
+    .about-section,
+    .popular-courses,
+    .list-links,
+    .contact-info {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .man-container {
+        padding: 20px;
+    }
+
+    .center-heading {
+        font-size: 28px;
+    }
+
+    .content-container {
+        gap: 15px;
+    }
+
+    .popular-courses .course-link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .popular-courses .course-link img {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .div-title {
+        font-size: 16px;
+    }
+
+    .div-content {
+        font-size: 12px;
+    }
+
+    .contact-details p {
+        font-size: 12px;
+    }
+}
+
+.footerr{
+    text-decoration: none;
+    border: none;
+}
+

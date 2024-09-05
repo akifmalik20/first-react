@@ -1,0 +1,104 @@
+/* JobCard.css */
+.job-card {
+    width: 320px;
+    height: 450px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 16px auto;
+    background-color:#E0F4F1 ;
+}
+
+.job-card-header {
+    background-color: #3366cc;
+    color: white;
+    padding: 40px 16px; /* Adjust padding for the header size */
+    text-align: left;
+    position: relative;
+    background-image: url("../src/images/ikl.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.job-card-header img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.job-card-header h2 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0;
+    color: #333333;
+    font-weight: bolder;
+}
+
+.job-card-header h2 span {
+    display: block; /* Forces each word to be on its own line */
+    color: #333333;
+    font-weight: bolder;
+}
+
+.job-card-header .divider {
+    margin: 8px 0; /* Space around the line */
+    border: none;
+    border-top: 2px solid black; /* Line styling */
+    width: 120px;
+    color: black;
+    font-weight: bolder;
+}
+
+.job-card-header p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+    color: black;
+    font-weight: bold;
+}
+
+.job-card-body {
+    padding: 20px;
+    background-color: #E0F4F1; /* Background color of the card body */
+}
+
+.job-detail {
+    display: flex;
+    align-items: center;
+    margin: 14px 0; /* Increased spacing between body elements */
+}
+
+.custom-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.read-more-button {
+    display: block;
+    width: 40%;
+    margin: 20px auto; /* Center the button */
+    padding: 12px;
+    background-color: #007bff; /* Set the button background color */
+    color: white; /* Ensure text is readable on the button */
+    border: none; /* Remove border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+/* Footer Styles */
+.footer {
+    background-color:#E0F4F1; /* Match footer background color with card body */
+    padding: 20px;
+    text-align: center;
+}

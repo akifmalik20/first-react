@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+/* Apply font-family, size, and color */
+.navbar {
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff; /* Ensures the text color is white */
+  font-size: 12px;
+  width: 100%;
+}
+
+.navbar .nav-link,
+.navbar span,
+.navbar a {
+  color: #ffffff; /* Ensures all text remains white */
+}
+
+/* Remove underline from links */
+.navbar a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Apply hover effect to links if needed */
+.navbar a:hover {
+  color: #C0C089; /* Change this to the color you want on hover */
+  transition: color 1s ease;
+}
+
+.navbar i {
+  font-size: 12px; /* Ensures icons match the text size */
+ 
+}
+.navbar-container {
+  padding-left: 140px;
+  padding-right: 50px;
+}
+
+.navbar-opacity {
+  background-color:#6E6E47; /* Primary color with 0.6 opacity */
+}
+.navbar .fa-phone, .navbar .fa-location-dot, .navbar .fa-clock,
+.navbar .fa-facebook-f, .navbar .fa-youtube, .navbar .fa-linkedin-in, 
+.navbar .fa-instagram, .navbar .fa-user .a {
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .fa-phone:hover, .navbar .fa-location-dot:hover, .navbar .fa-clock:hover,
+.navbar .fa-facebook-f:hover, .navbar .fa-youtube:hover, .navbar .fa-linkedin-in:hover, 
+.navbar .fa-instagram:hover, .navbar .fa-user:hover .a {
+  color: #C0C089; /* Change this to the color you want on hover */
+}

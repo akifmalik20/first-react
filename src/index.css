@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.n:hover {
+  
+  
+  border-bottom:  3px solid black;
+  
+}
+
+/* styles.css */
+.btn-get-started {
+  background-color: #007bff; /* Primary color or any color you prefer */
+  color: white; /* Text color */
+  border: none; /* Removes default border */
+  border-radius: 1000px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allows margin and padding to be applied */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn-get-started:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+.brand-name {
+  font-family: 'Arial', sans-serif; /* Choose a font family */
+  font-size: 2rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #0056b3; /* Set the text color */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}

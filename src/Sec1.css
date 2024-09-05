@@ -1,0 +1,26 @@
+.custom-cardd {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Make the card width responsive */
+  height: 400px; /* Increase the height of the card */
+  background: white; /* Set a white background to differentiate from the hover effect */
+}
+
+.custom-cardd:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect on hover */
+}
+
+.icon-imagee {
+  width: 100px; /* Adjust the size of the icon */
+  height: 100px;
+}
+
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0F4F1; /* Background color of the card body */
+}

@@ -1,0 +1,47 @@
+/* src/components/CardTab.css */
+
+.card-tab {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #eee;
+    background: #E0F4F1; /* Default background color for each tab */
+    border-radius: 8px; /* Rounded corners for tabs */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Smooth transition effects */
+    margin-bottom: 10px; /* Space between tabs */
+  }
+  
+  .card-tab:hover {
+    background: #f9f9f9; /* Very light grey background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect on hover */
+  }
+  
+  .tab-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .tab-info {
+    flex: 1;
+  }
+  
+  .tab-info h3 {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .tab-info p {
+    margin: 0;
+    font-size: 6px;
+    color: #666; /* Slightly duller text for the subtitle */
+  }
+  
+  .tab-icon {
+    width: 24px;
+    height: 24px;
+  }
+  

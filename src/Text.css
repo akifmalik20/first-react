@@ -1,0 +1,164 @@
+/* General styles for text overlays */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: opacity 3s ease;
+    overflow: hidden;
+    opacity: 0.8;
+    width: 60%; /* Adjusted width for responsiveness */
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: opacity 3s ease;
+    overflow: hidden;
+    opacity: 0.8;
+    width: 60%; /* Adjusted width for responsiveness */
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.3;
+    margin-top: 80px;
+}
+@media (max-width: 768px) {
+    .text-overlay,
+    .text-overlay1 {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-top: 50px; /* Ensure it does not overlap */
+    }
+}
+
+.static-text {
+    display: inline;
+    color: #F5D300;
+    margin-right: 0;
+}
+
+.text-word {
+    display: inline;
+    transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    color: #F5D300;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.pa {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #C4A484;
+    border-radius: 10px;
+    outline: none;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.icon-link {
+    display: inline-block;
+}
+
+.icon-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .text-overlay, .text-overlay1 {
+        font-size: 2.2rem; /* Scale down the font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .text-overlay {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+
+    .text-overlay1 {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .pa {
+        font-size: 1rem;
+    }
+
+    .icon-image {
+        width: 100px; /* Scale down icons on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+
+    .text-overlay1 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .search-bar {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .icon-image {
+        width: 80px; /* Further scaling down icons */
+    }
+}

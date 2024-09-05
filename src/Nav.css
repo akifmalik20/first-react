@@ -1,0 +1,74 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: #333333; /* Dark background color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* Logo Image Styling */
+.navbar-logo .logo-image {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Navbar Links Styling */
+.navbar-links .nav-link {
+  color: #ddd;
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links .nav-link:hover {
+  color: #C4A484;
+}
+
+/* Navbar Icons Styling */
+.navbar-icons .icon-link {
+  color: #B0B0B0;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-icons .icon-link:hover {
+  color: #C4A484;
+}
+
+/* Adjust flex and padding for responsiveness */
+@media (max-width: 992px) {
+  .navbar-links .nav-link {
+    margin-right: 10px; /* Less space between links on smaller screens */
+  }
+
+  .custom-navbar {
+    padding: 8px 15px; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-icons {
+    justify-content: center; /* Center icons on smaller screens */
+  }
+}
+
+/* Stack icons vertically on very small screens */
+@media (max-width: 576px) {
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    margin-top: 10px; /* Add space above the links */
+  }
+
+  .navbar-icons .icon-link {
+    margin-left: 10px; /* Slightly less margin between icons */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .separator {
+    display: none; /* Hide separator on small screens */
+  }
+}
+
+.navbar-links .qw {
+  text-transform: uppercase;
+}

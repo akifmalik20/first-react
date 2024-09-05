@@ -1,0 +1,81 @@
+/* Sec4.css */
+#header {
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no scrollbars */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for animation */
+.header-img, .text-section, .image-links {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 4s ease-out, transform 3s ease-out;
+}
+
+/* Visible state when the element comes into view */
+.header-img.visible, .text-section.visible, .image-links.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-img img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    margin:auto; /* Add space to the left of the image */
+}
+
+.text-section {
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-weight: bolder;
+    font-size: 3rem; /* Increase size of h1 */
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 90px;
+}
+
+.text-section span.highlight {
+    color: #007bff; /* Color for the span text */
+}
+
+.text-section p {
+    margin-top: 20px;
+    margin-right: 90px; /* Adjust space above the paragraph if needed */
+    margin-left: 50px;
+}
+
+.image-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-left: 50px;
+}
+
+.nav-img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-img:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+}

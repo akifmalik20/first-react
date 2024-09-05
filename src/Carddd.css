@@ -1,0 +1,99 @@
+/* src/components/Carddd.css */
+
+.carddd {
+    position: fixed;
+    left: 20px; /* Adjust to prevent overlapping with button */
+    bottom: 140px;
+    width: 250px; /* Decreased width of the card */
+    height: 300px; /* Increased height of the card */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+    border-radius: 30px;
+  }
+  
+  .carddd:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+  }
+  
+  .car-header {
+    display: flex;
+    align-items: center;
+    background: #4d96e4; /* Bootstrap blue */
+    color: white;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .heade-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .heade-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    flex: 1;
+  }
+  
+  .title-text {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  
+  .subtitle-text {
+    margin: 0;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly dull color */
+  }
+  
+  .close-buton {
+    background: none;
+    border: none;
+    color: rgb(235, 4, 4);
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .cad-body {
+    padding: 10px;
+    background: #f9f9f9; /* Light background to contrast with tabs */
+  }
+  
+  .card-tab {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Add padding inside each tab */
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border-left: 4px solid #C0C089; /* Left border to the tab */
+    background: #E0F4F1; /* Different background for tabs */
+    border-bottom: 1px solid #eee; /* Light border at the bottom */
+    transition: background 0.3s;
+    margin-bottom: 10px; /* Slight spacing between tabs */
+  }
+  
+  .card-tab:hover {
+    background: #e6f0ff; /* Light blue background on hover */
+  }
+  
+  .card-tab .title {
+    font-size: 8px; /* Reduced font size for tab titles */
+  }
+  
+  .card-tab .subtitle {
+    font-size: 6px; /* Reduced font size for subtitles */
+    color: #666; /* Slightly duller for subtitles */
+    font-style: italic; /* Italics for a subtle look */
+  }
+  
